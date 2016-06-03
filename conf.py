@@ -1,13 +1,12 @@
 # -*- coding: utf-8 -*-
 #
-# MongoDB documentation build configuration file, created by
-# sphinx-quickstart on Mon Oct  3 09:58:40 2011.
-#
 # This file is execfile()d with the current directory set to its containing dir.
 
-import sys
-import os.path
+import base64
 import datetime
+import glob
+import os.path
+import sys
 
 project_root = os.path.join(os.path.abspath(os.path.dirname(__file__)))
 sys.path.append(project_root)
@@ -30,6 +29,7 @@ extensions = [
     'sphinx.ext.todo',
     'mongodb',
     'directives',
+    'intermanual'
 ]
 
 templates_path = ['.templates']
@@ -51,7 +51,6 @@ rst_epilog = '\n'.join([
     '.. |year| replace:: {0}'.format(datetime.date.today().year),
     '.. |ent-build| replace:: MongoDB Enterprise',
     '.. |hardlink| replace:: http://docs.mongodb.com/compass/',
-    '.. |compass| replace:: MongoDB Compass',
     '.. |checkmark| unicode:: U+2713'
 ])
 
@@ -61,6 +60,11 @@ extlinks = {
     'docsgithub' : ( 'http://github.com/mongodb/docs/blob/' + conf.git.branches.current + '/%s', ''),
     'manual': ('http://docs.mongodb.org/manual%s', ''),
 }
+
+intersphinx_mapping = {}
+for path in glob.glob(os.path.join(conf.paths.projectroot, conf.paths.output, '*.inv')):
+    name, encoded_url = os.path.splitext(os.path.basename(path))[0].split('.', 1)
+    intersphinx_mapping[name] = (str(base64.b64decode(encoded_url), 'utf-8'), path)
 
 languages = [
     ("ar", "Arabic"),
@@ -110,7 +114,7 @@ html_theme_options = {
     'translations': languages,
     'language': language,
     'manual_path': "compass",
-    'repo_name': 'docs-compass',
+    'repo_name': 'docs-cxx',
     'jira_project': 'DOCS',
     'google_analytics': sconf.theme.google_analytics,
     'project': sconf.project,

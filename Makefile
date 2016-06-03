@@ -21,6 +21,7 @@ help:
 	@echo '  ARGS         - Arguments to pass to mut-publish'
 
 build:
+	mut-intersphinx --update=./config/intersphinx.yaml
 	mut-build --use-builder=sphinx
 
 stage:

@@ -3,3 +3,84 @@ Quick Start
 ===========
 
 .. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: twocols
+
+Prerequisites
+-------------
+
+* A running MongoDB on localhost using the default port for MongoDB
+  27017.
+
+* The MongoDB C++ Driver. See the :doc:`/installation` documentation for
+  instructions on how to install this.
+
+* The following statements at the top of your source file:
+
+  .. code-block:: c++
+
+     #include <bsoncxx/json.hpp>
+     #include <mongocxx/client.hpp>
+     #include <mongocxx/stdx.hpp>
+     #include <mongocxx/uri.hpp>
+
+     using bsoncxx::builder::stream::document;
+     using bsoncxx::builder::stream::open_document;
+     using bsoncxx::builder::stream::close_document;
+     using bsoncxx::builder::stream::open_array;
+     using bsoncxx::builder::stream::close_array;
+     using bsoncxx::builder::stream::finalize;
+
+Make a Connection
+-----------------
+
+To connect to a running MongoDB instance, you use the
+`mongocxx::client <http://api.mongodb.com/cxx11/current/classmongocxx_1_1client.html>`_
+class.
+
+The default constructor will connect to a server running on localhost on
+port ``27017``:
+
+.. code-block:: c++
+
+   mongocxx::client _client;
+
+To specify the host to connect to, construct a
+`mongocxx::uri <http://api.mongodb.com/cxx11/current/classmongocxx_1_1uri.html>`_
+class with a :ref:`MongoDB URI <mongodb-uri>`, and pass that into the
+``mongocxx::client`` constructor:
+
+.. code-block:: c++
+
+   mongocxx::uri uri("mongodb://localhost:27017");
+   mongocxx::client _client(uri);
+
+Access a Database and a Collection
+----------------------------------
+
+Create a Document
+-----------------
+
+Insert a Document
+-----------------
+
+Query the Collection
+--------------------
+
+Update Documents
+----------------
+
+Delete Documents
+----------------
+
+Create Indexes
+--------------
+
+Additional Information
+----------------------
+
+For additional tutorials (such as to use the aggregation framework, specify write concern, etc.), see :doc:`/tutorials`.

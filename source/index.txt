@@ -1,8 +1,14 @@
-===============
-MongoDB Compass
-===============
+=================
+C++ Driver Manual
+=================
 
 .. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
 
 The following guide provides information on using the MongoDB C++
 Driver.
@@ -38,7 +44,7 @@ In addition to this guide, the following resources are available:
       /installation
       /quick-start
       /tutorials
-      http://api.mongodb.org/cxx11/current/
+      API (External Link) ➟ <http://api.mongodb.org/cxx11/current/>
       /upgrade-considerations
       /reference
       /contribute

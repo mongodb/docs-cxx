@@ -4,7 +4,7 @@ paths:
   static: ['source/.static']
 theme:
   name: 'ecosystem'
-  sitename: 'MongoDB Compass'
+  sitename: 'C++ Driver Manual'
   jira: 'DOCS'
   google_analytics: 'UA-7301842-8'
   nav_excluded:
