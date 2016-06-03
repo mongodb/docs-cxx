@@ -1,0 +1,7 @@
+# Update versions in config.toml as well
+githubRepo = "docs-cxx"
+githubBranch = "master"
+currentVersion = "3.3"
+highlightTheme = "idea.css"
+apiUrl = "http://api.mongodb.com/java/3.3/"
+
