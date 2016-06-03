@@ -1,0 +1,46 @@
+git:
+  remote:
+    upstream: 'mongodb/docs-cxx'
+    tools: 'mongodb/docs-tools'
+project:
+  name: 'compass'
+  tag: 'compass'
+  url: 'http://docs.mongodb.com'
+  title: "MongoDB Compass"
+  branched: false
+system:
+  tools:
+    ref: HEAD
+    pinned: false
+  make:
+    generated:
+      - 'sphinx'
+      - 'meta'
+      - 'push'
+      - 'migrations'
+      - 'integration'
+    static:
+      - 'makefile.compatibility'
+      - 'makefile.clean'
+  files:
+    - 'pdfs.yaml'
+    - 'push.yaml'
+    - 'integration.yaml'
+    - 'sphinx_local.yaml'
+    - htaccess: ['htaccess.yaml']
+version:
+  release: '2.6.4'
+  branch: '2.6'
+assets:
+  - branch: master
+    path: build/docs-tools
+    repository: http://github.com/mongodb/docs-tools.git
+paths:
+  output: 'build'
+  source: 'source'
+  includes: 'source/includes'
+  images: 'source/images'
+  tools: 'bin'
+  buildsystem: 'build/docs-tools'
+  builddata: 'config'
+...

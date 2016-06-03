@@ -1,0 +1,5 @@
+============
+Installation
+============
+
+.. default-domain:: mongodb

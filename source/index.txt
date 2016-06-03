@@ -1,0 +1,44 @@
+===============
+MongoDB Compass
+===============
+
+.. default-domain:: mongodb
+
+The following guide provides information on using the MongoDB C++
+Driver.
+
+Community
+---------
+
+We are lucky to have a vibrant MongoDB Java community with lots of
+varying experience of using the Java driver. Often, the quickest way to
+get support for general questions is through the
+`mongodb-user google group <http://groups.google.com/group/mongodb-user>`
+or through
+`Stack Overflow <https://stackoverflow.com/questions/tagged/mongodb%20c%2b%2b>`_.
+
+Please also refer to our own
+`support channels <http://www.mongodb.org/about/support>`_
+documentation.
+
+Additional Resources
+--------------------
+
+In addition to this guide, the following resources are available:
+
+* `MongoDB C++ Driver API documentation <http://api.mongodb.com/cxx11/current/>`_
+* `MongoDB C++ Driver Source Code on GitHub <https://github.com/mongodb/mongo-cxx-driver>`_
+* `MongoDB Manual <http://docs.mongodb.com/manual/>`_
+
+.. class:: hidden
+
+   .. toctree::
+      :titlesonly:
+
+      /installation
+      /quick-start
+      /tutorials
+      http://api.mongodb.org/cxx11/current/
+      /upgrade-considerations
+      /reference
+      /contribute
