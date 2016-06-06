@@ -16,16 +16,12 @@ system:
     generated:
       - 'sphinx'
       - 'meta'
-      - 'push'
       - 'migrations'
       - 'integration'
     static:
       - 'makefile.compatibility'
       - 'makefile.clean'
   files:
-    - 'pdfs.yaml'
-    - 'push.yaml'
-    - 'intersphinx.yaml'
     - 'integration.yaml'
     - 'sphinx_local.yaml'
     - htaccess: ['htaccess.yaml']
