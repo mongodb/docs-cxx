@@ -58,6 +58,7 @@ extlinks = {
     'source': ('https://github.com/mongodb/mongo/blob/master/%s', ''),
     'docsgithub' : ( 'http://github.com/mongodb/docs/blob/' + conf.git.branches.current + '/%s', ''),
     'manual': ('http://docs.mongodb.org/manual%s', ''),
+    'api': ('http://api.mongodb.com/cxx11/current/%s.html', ''),
 }
 
 intersphinx_mapping = {}

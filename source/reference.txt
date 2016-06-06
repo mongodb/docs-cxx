@@ -3,3 +3,10 @@ Reference
 =========
 
 .. default-domain:: mongodb
+
+.. class:: hidden
+
+   .. toctree::
+      :titlesonly:
+
+      /reference/document

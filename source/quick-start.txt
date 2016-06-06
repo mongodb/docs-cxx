@@ -23,36 +23,40 @@ Prerequisites
 
   .. code-block:: c++
 
+     #include <cstdint>
+     #include <vector>
      #include <bsoncxx/json.hpp>
      #include <mongocxx/client.hpp>
      #include <mongocxx/stdx.hpp>
      #include <mongocxx/uri.hpp>
 
-     using bsoncxx::builder::stream::document;
-     using bsoncxx::builder::stream::open_document;
-     using bsoncxx::builder::stream::close_document;
-     using bsoncxx::builder::stream::open_array;
+     using bsoncxx::builder::basic::kvp;
      using bsoncxx::builder::stream::close_array;
+     using bsoncxx::builder::stream::close_document;
+     using bsoncxx::builder::stream::document;
      using bsoncxx::builder::stream::finalize;
+     using bsoncxx::builder::stream::open_array;
+     using bsoncxx::builder::stream::open_document;
 
 Make a Connection
 -----------------
 
 To connect to a running MongoDB instance, you use the
-`mongocxx::client <http://api.mongodb.com/cxx11/current/classmongocxx_1_1client.html>`_
-class.
+:api:`mongocxx::client <classmongocxx_1_1client>` class.
 
-The default constructor will connect to a server running on localhost on
-port ``27017``:
+You must specify the host to connect to using a
+:api:`mongocxx::uri <classmongocxx_1_1uri>` instance containing a
+:ref:`MongoDB URI <mongodb-uri>`, and pass that into the
+``mongocxx::client`` constructor.
+
+The default constructor ``mongocxx::uri`` constructor will connect to a
+server running on localhost on port ``27017``:
 
 .. code-block:: c++
 
-   mongocxx::client _client;
+   mongocxx::client _client{mongocxx::uri{}};
 
-To specify the host to connect to, construct a
-`mongocxx::uri <http://api.mongodb.com/cxx11/current/classmongocxx_1_1uri.html>`_
-class with a :ref:`MongoDB URI <mongodb-uri>`, and pass that into the
-``mongocxx::client`` constructor:
+This is equivalent to the following:
 
 .. code-block:: c++
 
@@ -62,25 +66,391 @@ class with a :ref:`MongoDB URI <mongodb-uri>`, and pass that into the
 Access a Database and a Collection
 ----------------------------------
 
+Access a Database
+~~~~~~~~~~~~~~~~~
+
+Once you have a :api:`mongocxx::client <classmongocxx_1_1client.html>`
+instance connected to a MongoDB deployment, use either the
+``database()`` method or ``operator[]`` to obtain a
+:api:`mongocxx::database <classmongocxx_1_1database>` instance.
+
+If the database you request does not exist, MongoDB creates it when you
+first store data.
+
+The following example accesses the ``mydb`` database:
+
+.. code-block:: c++
+
+   mongocxx::database db = client["mydb"];
+
+Access a Collection
+~~~~~~~~~~~~~~~~~~~
+
+Once you have a :api:`mongocxx::database <classmongocxx_1_1database>`
+instance, use either the ``collection()`` method or ``operator[]`` to
+obtain a :api:`mongocxx::collection <classmongocxx_1_1collection>`
+instance.
+
+If the collection you request does not exist, MongoDB creates it when
+you first store data.
+
+For example, using the ``db`` instance created in the previous section,
+the following statement accesses the collection named ``test`` in the
+``mydb`` database:
+
+.. code-block:: c++
+
+    mongocxx::collection coll = db["test"];
+
 Create a Document
 -----------------
+
+To create a document using the C++ driver, use one of the two available
+builder interfaces:
+
+* Stream builder: ``bsoncxx::builder::stream``
+* Basic builder: ``bsoncxx::builder::basic``
+
+This guide only briefly describes the stream builder. The
+:doc:`Document reference </reference/document>` page explains both in
+greater detail.
+
+For example, consider the following JSON document:
+
+.. code-block:: json
+
+   {
+      "name" : "MongoDB",
+      "type" : "database",
+      "count" : 1,
+      "versions": [ "v3.2", "v3.0", "v2.6" ],
+      "info" : {
+                  "x" : 203,
+                  "y" : 102
+               }
+   }
+
+Using the stream builder interface, you can construct this document
+as follows:
+
+.. code-block:: c++
+
+   auto builder = bsoncxx::builder::stream::document{};
+   bsoncxx::document::value doc_value = builder
+     << "name" << "MongoDB"
+     << "type" << "database"
+     << "count" << 1
+     << versions << bsoncxx::builder::stream::open_array
+       << "v3.2" << "v3.0", "v2.6"
+     << close_array
+     << "info" << bsoncxx::builder::stream::open_document
+       << "x" << 203
+       << "y" << 102
+     << bsoncxx::builder::stream::close_document
+     << bsoncxx::builder::stream::finalize;
+
+Use ``bsoncxx::builder::stream::finalize`` to obtain a
+:api:`bsoncxx::document::value <classbsoncxx_1_1document_1_1value>`
+instance.
+
+This ``bsoncxx::document::value`` type is a read-only object owning
+its own memory. To use it, you must obtain a
+:api:`bsoncxx::document::view <classbsoncxx_1_1document_1_1view>` using
+the ``view()`` method:
+
+.. code-block:: c++
+
+   bsoncxx::document::view view = doc_value.view();
+
+You can access fields within this document view using ``operator[]``,
+which will return a :api:`bsoncxx::document::element <classbsoncxx_1_1document_1_1element>` instance. For example, the
+following will extract the ``name`` field containing a string:
+
+.. code-block:: c++
+
+   bsoncxx::document::element element = view["name"];
+   if(element.type() != type::k_utf8) {
+     // Error
+   }
+   std::string name = view.get_utf8().value.to_string();
+
+If the value in the ``name`` field is not a string and you do not
+include a type guard as seen in the preceding example, this code will
+throw an instance of
+:api:`bsoncxx::exception <classbsoncxx_1_1exception>`.
+
+.. seealso::
+
+   :doc:`/reference/document`
 
 Insert a Document
 -----------------
 
+Insert One Document
+~~~~~~~~~~~~~~~~~~~
+
+To insert a single document into the collection, you can use the
+``insert_one()`` method of a
+:api:`mongocxx::collection <classmongocxx_1_1collection>` instance:
+
+.. code-block:: c++
+
+   mongocxx::result::insert_one result = restaurants.insert_one(doc);
+
+.. note::
+
+   If you do not specify a top-level ``_id`` field in the document,
+   MongoDB automatically adds a ``_id`` field to the inserted document.
+
+   You can obtain this value using the ``inserted_id()`` method of the
+   returned
+   :api:`mongocxx::result::insert_one <classmongocxx_1_1result_1_1insert__one>`
+   instance.
+
+Insert Multiple Documents
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To insert multiple documents to the collection, you can use the
+``insert_many()`` method of a
+:api:`mongocxx::collection <classmongocxx_1_1collection>` instance,
+which takes a list of documents to insert.
+
+The following example will add multiple documents of the form:
+
+.. code-block:: javascript
+
+   { "i" : value }
+
+Create the documents in a loop and add to the documents list:
+
+.. code-block:: c++
+
+   std::vector<bsoncxx::document::value> documents;
+   for(int i = 0; i < 100; i++) {
+       documents.push_back(
+         bsoncxx::builder::stream::document{} << "i" << i << finalize);
+   }
+
+To insert these documents to the collection, pass the list of documents
+to the ``insert_many()`` method.
+
+.. code-block:: c++
+
+   collection.insert_many(documents);
+
+.. note::
+
+   If you do not specify a top-level ``_id`` field in each document,
+   MongoDB automatically adds a ``_id`` field to the inserted documents.
+
+   You can obtain this value using the ``inserted_ids()`` method of the
+   returned
+   :api:`mongocxx::result::insert_many <classmongocxx_1_1result_1_1insert__many>`
+   instance.
+
 Query the Collection
 --------------------
+
+To query the collection, you can use the collection’s ``find()``
+and ``find_one`` methods.
+
+``find()`` will return an instance of
+:api:`mongocxx::cursor <classmongocxx_1_1cursor>`, while ``find_one()``
+will return an instance of
+``std::optional<``:api:`bsoncxx::document::value <classbsoncxx_1_1document_1_1value.html>` ``>``
+
+You can call either method without any arguments to query all documents
+in a collection, or pass a filter to query for documents that match the
+filter criteria.
+
+Find the First Document in a Collection
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To return the first document in the collection, use the ``find_one()``
+method without any parameters.
+
+.. code-block:: c++
+
+   mongocxx::stdx::optional<bsoncxx::document::value> maybe_result =
+     collection.find_one(document{} << finalize);
+   if(maybe_result) {
+     // Do something with *maybe_result;
+   }
+
+Find All Documents in a Collection
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: c++
+
+   mongocxx::cursor cursor = collection.find(document{} << finalize);
+   for(auto doc : cursor) {
+     std::cout << bsoncxx::to_json(doc) << "\n";
+   }
+
+Specify a Query Filter
+~~~~~~~~~~~~~~~~~~~~~~
+
+Get A Single Document That Matches a Filter
+```````````````````````````````````````````
+
+To find the first document where the field ``i`` has the value ``71``,
+pass the document ``{"i": 71}`` to specify the equality condition:
+
+.. code-block:: c++
+
+   mongocxx::stdx::optional<bsoncxx::document::value> maybe_result =
+     collection.find_one(document{} << "i" << 71 << finalize);
+   if(maybe_result) {
+     std::cout << bsoncxx::to_json(*maybe_result) << "\n";
+   }
+
+The example prints one document:
+
+.. code-block:: json
+
+   { "_id" : { "$oid" : "5755e19b38c96f1fb25667a8" },  "i" : 71 }
+
+.. include:: /includes/fact-automatic-id.rst
+
+Get All Documents That Match a Filter
+`````````````````````````````````````
+
+The following example returns and prints all documents where
+``50 < "i" <= 100``:
+
+.. code-block:: c++
+
+   mongocxx::cursor cursor = collection.find(
+     document{} << "i" << open_document <<
+       "$gt" << 50 <<
+       "$lte" << 100
+     << close_document << finalize);
+   for(auto doc : cursor) {
+     std::cout << bsoncxx::to_json(doc) << "\n";
+   }
 
 Update Documents
 ----------------
 
+To update documents in a collection, you can use the collection’s
+``update_one()`` and ``update_many()`` methods.
+
+The update methods return an instance of
+``std::optional<``
+:api:`mongocxx::result::update <classmongocxx_1_1result_1_1update>` ``>``,
+which provides information about the operation including the number of
+documents modified by the update.
+
+Update a Single Document
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+To update at most a single document, use the ``update_one()`` method.
+
+The following example updates the first document that matches the filter
+``{ "i": 10 }`` and sets the value of ``i`` to ``110``:
+
+.. code-block:: c++
+
+   collection.update_one(document{} << "i" << 10 << finalize,
+                         document{} << "$set" << open_document <<
+                           "i" << 110 << close_document << finalize);
+
+
+
+Update Multiple Documents
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To update all documents matching a filter, use the ``update_many()``
+method.
+
+The following example increments the value of ``i`` by ``100`` where
+``i`` is less than ``100``:
+
+.. code-block:: c++
+
+   mongocxx::stdx::optional<mongocxx::result::update> result =
+    collection.update_many(
+     document{} << "i" << open_document <<
+       "$lt" << 100 << close_document << finalize,
+     document{} << "$inc" << open_document <<
+       "i" << 100 << close_document << finalize);
+
+   if(result) {
+     std::cout << result->modified_count() << "\n";
+   }
+
 Delete Documents
 ----------------
+
+To delete documents from a collection, you can use a collection’s
+``delete_one()`` and ``delete_many()`` methods.
+
+The delete methods return an instance of
+``std::optional<``
+:api:`mongocxx::result::delete <classmongocxx_1_1result_1_1delete__result>` ``>``,
+which contains the number of documents deleted.
+
+Delete a Single Document
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+To delete at most a single document that matches a filter, use the
+``delete_one()`` method.
+
+For example, to delete a document that matches the filter
+``{ "i": 110 }``:
+
+.. code-block:: c++
+
+   collection.delete_one(document{} << "i" << 110 << finalize);
+
+Delete All Documents That Match a Filter
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To delete all documents matching a filter, use a collection's
+``delete_many()`` method.
+
+The following example deletes all documents where ``i`` is greater or
+equal to ``100``:
+
+.. code-block:: c++
+
+   mongocxx::stdx::optional<mongocxx::result::delete_result> result =
+    collection.delete_many(
+     document{} << "i" << open_document <<
+       "$gte" << 100 << close_document << finalize);
+
+   if(result) {
+     std::cout << result->deleted_count() << "\n";
+   }
 
 Create Indexes
 --------------
 
+To create an index on a field or set of fields, pass an index
+specification document to the ``create_index()`` method of a
+:api:`mongocxx::collection <classmongocxx_1_1collection>` instance. An
+index key specification document contains the fields to index and the
+index type for each field:
+
+.. code-block:: javascript
+
+   { "index1": "<type>", "index2": type }
+
+* For an ascending index type, specify 1 for <type>.
+* For a descending index type, specify -1 for <type>.
+
+The following example creates an ascending index on the ``i`` field:
+
+.. code-block:: c++
+
+   auto index_specification = document{} << "i" << 1 << finalize;
+   collection.create_index(std::move(index_specification));
+
 Additional Information
 ----------------------
 
-For additional tutorials (such as to use the aggregation framework, specify write concern, etc.), see :doc:`/tutorials`.
+For additional tutorials (such as how to use the aggregation framework,
+specify write concern, etc.), see :doc:`/tutorials`.
+
+For a complete sample application, see
+:doc:`/tutorials/geospatial-sample`.
