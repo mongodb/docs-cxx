@@ -3,3 +3,25 @@ Contribute to the Driver
 ========================
 
 .. default-domain:: mongodb
+
+For Bugs and Feature Requests
+-----------------------------
+
+If you think you have found a bug or want to see a new feature in the
+C++ driver, please open an issue in `JIRA <https://jira.mongodb.org/>`_:
+
+1. `Create a Jira account and login <https://jira.mongodb.org/>`_.
+
+2. Navigate to the `CXX project <https://jira.mongodb.org/browse/CXX>`_.
+
+3. Click **Create Issue**. Provide as much information as possible about
+   the issue and the steps to reproduce it.
+
+.. note::
+
+   Bug reports in JIRA for the driver and the Core Server (i.e.
+   **SERVER**) projects are public.
+
+If you identify a security vulnerability in a driver or any other
+MongoDB project, please report it according to the instructions found in
+:manual:`Create a Vulnerability Report </tutorial/create-a-vulnerability-report>`.
