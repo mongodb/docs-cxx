@@ -8,11 +8,10 @@ PREFIX=compass
 
 .PHONY: help build stage fake-deploy deploy
 
-all: build
-
 help:
 	@echo 'Targets'
 	@echo '  help         - Show this help message'
+	@echo '  build        - Build the C++ driver documentation'
 	@echo '  stage        - Host online for review'
 	@echo '  fake-deploy  - Create a fake deployment in the staging bucket'
 	@echo '  deploy       - Deploy to the production bucket'
