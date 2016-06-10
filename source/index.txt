@@ -19,7 +19,7 @@ Community
 We are lucky to have a vibrant MongoDB Java community with lots of
 varying experience of using the Java driver. Often, the quickest way to
 get support for general questions is through the
-`mongodb-user google group <http://groups.google.com/group/mongodb-user>`
+`mongodb-user google group <http://groups.google.com/group/mongodb-user>`_
 or through
 `Stack Overflow <https://stackoverflow.com/questions/tagged/mongodb%20c%2b%2b>`_.
 

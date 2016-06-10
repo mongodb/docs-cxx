@@ -41,7 +41,7 @@ Prerequisites
 Make a Connection
 -----------------
 
-To connect to a running MongoDB instance, you use the
+To connect to a running MongoDB instance, use the
 :api:`mongocxx::client <classmongocxx_1_1client>` class.
 
 You must specify the host to connect to using a
