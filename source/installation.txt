@@ -3,3 +3,16 @@ Installation
 ============
 
 .. default-domain:: mongodb
+
+Prerequisites
+-------------
+
+- Windows or any standard Unix platform
+- GCC 4.8.2+, Clang 3.5+, Apple Clang 5.1+, or VC2015 Update 1+
+- CMake 3.2 or later
+- On Windows, boost 1.56 or later
+
+Installation
+------------
+
+.. include:: /includes/steps/install-source.rst

@@ -1,0 +1,100 @@
+ref: install-mongodbc
+title:
+  text: Install the latest version of the MongoDB C driver.
+pre: |
+   Follow the instructions at
+   `<https://api.mongodb.com/c/current/installing.html#unix-build>`_.
+---
+ref: choose-polyfill
+title:
+  text: Choose a C++17 polyfill
+pre: |
+   The MongoDB C++11 driver uses the experimental C++17 features
+   ``std::optional`` and ``std::string_view``. To compile
+   the MongoDB C++11 driver, you must choose one of the following
+   implementations for these features:
+
+   - MNMLSTC/core: Select with ``-DBSONCXX_POLY_USE_MNMLSTC``. This is
+     the default on non-Windows platforms, and vendors a header only
+     installation of MNMLSTC/core into the bsoncxx library installation.
+
+   - Boost: Select with ``-DBSONCXX_POLY_USE_BOOST``. This is the default
+     on Windows platforms, and is currently the only option if you are
+     using MSVC.
+
+   - ``std::experimental``: Select with
+     ``-DBSONCXX_POLY_USE_STD_EXPERIMENTAL``. If your toolchain's
+     standard library provides optional and string_view in the namespace
+     ``std::experimental``, you can use this option.
+
+   Most users should be fine sticking with the default. However, if you
+   have an existing application which makes heavy use of one of the
+   available libraries, you may prefer to build the MongoDB C++11 driver
+   against the same library.
+
+   .. warning::
+
+      Changing your choice of polyfill will result in a
+      binary-incompatible library.
+
+      Your standard library's ``std::experimental`` implementation may
+      change over time, breaking binary compatibility in unexpected ways.
+---
+ref: install-mongodbcxx
+title:
+  text: Download the latest version of the MongoDB C++11 driver.
+pre: |
+   To install the MongoDB C++11 driver, run the following commands:
+action:
+  - language: sh
+    code: |
+      curl -OL https://github.com/mongodb/mongo-cxx-driver/archive/r3.0.1.tar.gz
+      tar -xzf r3.0.1.tar.gz
+      cd mongo-cxx-driver-r3.0.1/build
+      cmake -DCMAKE_BUILD_TYPE=Release ..
+      make && sudo make install
+  - pre: |
+      If you did not install the MongoDB C driver into the default path,
+      substitute the ``cmake`` line above with the following:
+    language: sh
+    code: |
+      PKG_CONFIG_PATH=CDRIVER_INSTALL_PATH/lib/pkgconfig cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=CDRIVER-INSTALL-PATH ..
+---
+ref: test-install
+title:
+  text: Test your installation
+action:
+  - pre: |
+      Save the following to ``test.cpp``:
+    language: c++
+    code: |
+      #include <iostream>
+
+      #include <bsoncxx/builder/stream/document.hpp>
+      #include <bsoncxx/json.hpp>
+
+      #include <mongocxx/client.hpp>
+      #include <mongocxx/instance.hpp>
+
+      int main(int, char**) {
+          mongocxx::instance inst{};
+          mongocxx::client conn{mongocxx::uri{}};
+
+          bsoncxx::builder::stream::document document{};
+
+          auto collection = conn["testdb"]["testcollection"];
+          document << "hello" << "world";
+
+          collection.insert_one(document.view());
+          auto cursor = collection.find({});
+
+          for (auto&& doc : cursor) {
+              std::cout << bsoncxx::to_json(doc) << std::endl;
+          }
+      }
+  - pre: |
+      Compile the test program with the following command:
+    language: sh
+    code: |
+      c++ --std=c++11 test.cpp -o test $(pkg-config --cflags --libs libmongocxx)
+...
