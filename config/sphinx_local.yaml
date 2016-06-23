@@ -1,4 +1,4 @@
-project: 'mongodb-compass'
+project: 'driver-cxx'
 master_doc: 'index'
 paths:
   static: ['source/.static']
@@ -8,9 +8,7 @@ theme:
   jira: 'DOCS'
   google_analytics: 'UA-7301842-8'
   nav_excluded:
-    - /
     - /reference
-    - /tutorials
 sidebars:
   '**':
     - 'pagenav.html'

@@ -9,4 +9,13 @@ Tutorials
    .. toctree::
       :titlesonly:
 
-      /tutorials/geospatial-sample
+      /tutorials/connect-to-mongodb
+      /tutorials/read-operations
+      /tutorials/write-operations
+      /tutorials/collections
+      /tutorials/indexes
+      /tutorials/aggregation
+      /tutorials/text-search
+      /tutorials/geospatial
+      /tutorials/run-commands
+      /tutorials/gridfs

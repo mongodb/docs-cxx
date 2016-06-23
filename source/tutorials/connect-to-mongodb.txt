@@ -1,0 +1,47 @@
+==================
+Connect to MongoDB
+==================
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+Prerequisites
+-------------
+
+* A running MongoDB on localhost using the default port for MongoDB
+  27017.
+
+* The MongoDB C++ Driver. See the :doc:`/installation` documentation for
+  instructions on how to install this.
+
+* The following statements at the top of your source file:
+
+  .. code-block:: c++
+
+     #include <mongocxx/client.hpp>
+     #include <mongocxx/uri.hpp>
+
+Connect to a Single MongoDB Instance
+------------------------------------
+
+Connect to a Replica Set
+------------------------
+
+Connect to a Sharded Cluster
+----------------------------
+
+Connection Options
+------------------
+
+.. class:: hidden
+
+   .. toctree::
+      :titlesonly:
+
+      /tutorials/tls
+      /tutorials/authentication

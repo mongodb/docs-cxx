@@ -3,8 +3,8 @@ git:
     upstream: 'mongodb/docs-cxx'
     tools: 'mongodb/docs-tools'
 project:
-  name: 'compass'
-  tag: 'compass'
+  name: 'driver-cxx'
+  tag: 'driver-cxx'
   url: 'http://docs.mongodb.com'
   title: "C++ Driver Manual"
   branched: false

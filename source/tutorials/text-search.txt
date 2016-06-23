@@ -1,0 +1,12 @@
+===========
+Text Search
+===========
+
+.. default-domain:: mongodb
+
+.. class:: hidden
+
+   .. toctree::
+      :titlesonly:
+
+      /tutorials/geospatial-sample

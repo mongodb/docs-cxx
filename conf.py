@@ -113,7 +113,7 @@ html_theme_options = {
     'branch': conf.git.branches.current,
     'translations': languages,
     'language': language,
-    'manual_path': "compass",
+    'manual_path': 'driver-cxx',
     'repo_name': 'docs-cxx',
     'jira_project': 'DOCS',
     'google_analytics': sconf.theme.google_analytics,
@@ -122,21 +122,3 @@ html_theme_options = {
 }
 
 html_sidebars = sconf.sidebars
-
-
-# -- Options for Epub output ---------------------------------------------------
-
-# Bibliographic Dublin Core info.
-epub_title = conf.project.title
-epub_author = u'MongoDB Documentation Project'
-epub_publisher = u'MongoDB, Inc.'
-epub_copyright = copyright
-epub_theme = 'epub_mongodb'
-epub_tocdup = True
-epub_tocdepth = 3
-epub_language = 'en'
-epub_scheme = 'url'
-epub_identifier = 'http://docs.mongodb.com/compass/'
-epub_exclude_files = []
-epub_pre_files = []
-epub_post_files = []
