@@ -8,6 +8,9 @@ theme:
   jira: 'DOCS'
   google_analytics: 'UA-7301842-8'
   nav_excluded:
+    - /tutorials/connect-to-mongodb
+    - /tutorials/read-operations
+    - /tutorials/write-operations
     - /reference
 sidebars:
   '**':
