@@ -1,0 +1,24 @@
+baseurl = "/docs-cxx"
+languageCode = "en-us"
+title = "MongoDB C++ Driver"
+theme = "mongodb"
+canonifyurls = false
+
+[blackfriday]
+  plainIdAnchors = true
+
+
+# Update versions in mongodb.toml as well
+[[menu.main]]
+    name = "API Documentation"
+    pre = "<i class='fa fa-file-text-o'></i>"
+    weight = 100
+    identifier = "apiDocs"
+    url = "http://api.mongodb.com/cxx11/current/"
+
+[[menu.main]]
+    name = "Source Code"
+    pre = "<i class='fa fa-github'></i>"
+    weight = 100
+    identifier = "githubLink"
+    url = "https://github.com/mongodb/mongo-cxx-driver"
