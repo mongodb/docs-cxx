@@ -1582,7 +1582,7 @@ are many more capabilities. For further exploration:&lt;/p&gt;
 &lt;h1 id=&#34;mongodb-c-driver&#34;&gt;MongoDB C++ Driver&lt;/h1&gt;
 
 &lt;p&gt;Welcome to the MongoDB C++ driver.  On this site, you&amp;rsquo;ll find guides to
-&lt;a href=&#34;https://mongodb.github.io/docs-cxx/mongocxx-v3/installing/&#34;&gt;installing&lt;/a&gt; and &lt;a href=&#34;https://mongodb.github.io/docs-cxx/mongocxx-v3/tutorial/&#34;&gt;getting
+&lt;a href=&#34;https://mongodb.github.io/docs-cxx/mongocxx-v3/installation/&#34;&gt;installing&lt;/a&gt; and &lt;a href=&#34;https://mongodb.github.io/docs-cxx/mongocxx-v3/tutorial/&#34;&gt;getting
 started&lt;/a&gt; with the C++ driver for MongoDB, plus
 other documentation to help you get the most from MongoDB and C++.&lt;/p&gt;
 
