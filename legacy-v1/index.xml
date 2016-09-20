@@ -468,7 +468,7 @@ threads.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#scons-options&#34;&gt;SCons Options&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#windows-options&#34;&gt;Windows Options&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#mac-os-x-options&#34;&gt;Mac OS X Options&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;Download%20and%20Compile#deprecated-options&#34;&gt;Deprecated Options&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#deprecated-options&#34;&gt;Deprecated Options&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#windows-considerations&#34;&gt;Windows Considerations&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#example-c-driver-compilations&#34;&gt;Example C++ Driver Compilations&lt;/a&gt;
