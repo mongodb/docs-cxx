@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MongoDB C&#43;&#43; Driver Manual</title>
-    <link>http://mongodb.github.io/docs-cxx/</link>
+    <link>https://mongodb.github.io/docs-cxx/</link>
     <description>Recent content on MongoDB C&#43;&#43; Driver Manual</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Aug 2016 16:11:58 +0530</lastBuildDate>
-    <atom:link href="http://mongodb.github.io/docs-cxx/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mongodb.github.io/docs-cxx/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>API and ABI versioning</title>
-      <link>http://mongodb.github.io/docs-cxx/mongocxx-v3/api-abi-versioning/</link>
+      <link>https://mongodb.github.io/docs-cxx/mongocxx-v3/api-abi-versioning/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/docs-cxx/mongocxx-v3/api-abi-versioning/</guid>
+      <guid>https://mongodb.github.io/docs-cxx/mongocxx-v3/api-abi-versioning/</guid>
       <description>
 
 &lt;h2 id=&#34;api-versioning&#34;&gt;API Versioning&lt;/h2&gt;
@@ -74,10 +74,10 @@ version of the library installed.&lt;/p&gt;
     
     <item>
       <title>Breaking changes from 26compat</title>
-      <link>http://mongodb.github.io/docs-cxx/legacy-v1/breaking-changes/</link>
+      <link>https://mongodb.github.io/docs-cxx/legacy-v1/breaking-changes/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/docs-cxx/legacy-v1/breaking-changes/</guid>
+      <guid>https://mongodb.github.io/docs-cxx/legacy-v1/breaking-changes/</guid>
       <description>
 
 &lt;p&gt;The 26compat release series tracks the server 2.6 releases one-to-one. As a
@@ -227,10 +227,10 @@ release.&lt;/p&gt;
     
     <item>
       <title>Configuring the legacy driver</title>
-      <link>http://mongodb.github.io/docs-cxx/legacy-v1/configuration/</link>
+      <link>https://mongodb.github.io/docs-cxx/legacy-v1/configuration/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/docs-cxx/legacy-v1/configuration/</guid>
+      <guid>https://mongodb.github.io/docs-cxx/legacy-v1/configuration/</guid>
       <description>
 
 &lt;p&gt;In the legacy-0.9 development cycle, the mechanism by which the driver is
@@ -504,10 +504,10 @@ threads.&lt;/p&gt;&lt;/li&gt;
     
     <item>
       <title>Contribution Guidelines</title>
-      <link>http://mongodb.github.io/docs-cxx/contributing/</link>
+      <link>https://mongodb.github.io/docs-cxx/contributing/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/docs-cxx/contributing/</guid>
+      <guid>https://mongodb.github.io/docs-cxx/contributing/</guid>
       <description>
 
 &lt;h2 id=&#34;contribution-guidelines&#34;&gt;Contribution Guidelines&lt;/h2&gt;
@@ -659,10 +659,10 @@ MONGOCXX_INLINE_NAMESPACE_END
     
     <item>
       <title>Installing the legacy driver</title>
-      <link>http://mongodb.github.io/docs-cxx/legacy-v1/installation/</link>
+      <link>https://mongodb.github.io/docs-cxx/legacy-v1/installation/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/docs-cxx/legacy-v1/installation/</guid>
+      <guid>https://mongodb.github.io/docs-cxx/legacy-v1/installation/</guid>
       <description>
 
 &lt;h3 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h3&gt;
@@ -1062,7 +1062,7 @@ mongoclient-gd.pdb
 &lt;h4 id=&#34;initialization-and-configuration&#34;&gt;Initialization and Configuration&lt;/h4&gt;
 
 &lt;p&gt;NOTE: You &lt;em&gt;must&lt;/em&gt; initialize the legacy driver before use.  See
-&lt;a href=&#34;http://mongodb.github.io/docs-cxx/legacy-v1/configuration/&#34;&gt;Configuration&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;a href=&#34;https://mongodb.github.io/docs-cxx/legacy-v1/configuration/&#34;&gt;Configuration&lt;/a&gt; for more details.&lt;/p&gt;
 
 &lt;h4 id=&#34;client-headers&#34;&gt;Client Headers&lt;/h4&gt;
 
@@ -1121,10 +1121,10 @@ in hard to diagnose warnings or errors.&lt;/p&gt;
     
     <item>
       <title>Installing the mongocxx driver</title>
-      <link>http://mongodb.github.io/docs-cxx/mongocxx-v3/installation/</link>
+      <link>https://mongodb.github.io/docs-cxx/mongocxx-v3/installation/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/docs-cxx/mongocxx-v3/installation/</guid>
+      <guid>https://mongodb.github.io/docs-cxx/mongocxx-v3/installation/</guid>
       <description>
 
 &lt;h2 id=&#34;installing-the-mongocxx-driver&#34;&gt;Installing the mongocxx driver&lt;/h2&gt;
@@ -1245,10 +1245,10 @@ int main(int, char**) {
     
     <item>
       <title>Legacy driver tutorial</title>
-      <link>http://mongodb.github.io/docs-cxx/legacy-v1/tutorial/</link>
+      <link>https://mongodb.github.io/docs-cxx/legacy-v1/tutorial/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/docs-cxx/legacy-v1/tutorial/</guid>
+      <guid>https://mongodb.github.io/docs-cxx/legacy-v1/tutorial/</guid>
       <description>
 
 &lt;h3 id=&#34;getting-started-with-the-legacy-c-driver&#34;&gt;Getting started with the Legacy C++ Driver&lt;/h3&gt;
@@ -1270,12 +1270,12 @@ contents of a database after your C++ program runs.&lt;/p&gt;
 
 &lt;h3 id=&#34;installing-the-driver-library-and-headers&#34;&gt;Installing the Driver Library and Headers&lt;/h3&gt;
 
-&lt;p&gt;Please see &lt;a href=&#34;http://mongodb.github.io/docs-cxx/legacy-v1/installation/&#34;&gt;Installation&lt;/a&gt; for
+&lt;p&gt;Please see &lt;a href=&#34;https://mongodb.github.io/docs-cxx/legacy-v1/installation/&#34;&gt;Installation&lt;/a&gt; for
 instructions on how to download, build, and install the C++ client driver.&lt;/p&gt;
 
 &lt;h3 id=&#34;initializing-the-driver-library&#34;&gt;Initializing the Driver Library&lt;/h3&gt;
 
-&lt;p&gt;Please see &lt;a href=&#34;http://mongodb.github.io/docs-cxx/legacy-v1/configuration/&#34;&gt;Configuration&lt;/a&gt; for
+&lt;p&gt;Please see &lt;a href=&#34;https://mongodb.github.io/docs-cxx/legacy-v1/configuration/&#34;&gt;Configuration&lt;/a&gt; for
 instructions on how to properly initialize and terminate the driver:&lt;/p&gt;
 
 &lt;h3 id=&#34;connecting&#34;&gt;Connecting&lt;/h3&gt;
@@ -1399,7 +1399,7 @@ add an _id automatically if it is not included explicitly.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;BSONObj p = BSONObjBuilder().genOID().append(&amp;quot;name&amp;quot;,&amp;quot;Joe&amp;quot;).append(&amp;quot;age&amp;quot;,33).obj();
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Other helpers are listed in &lt;a href=&#34;http://mongodb.github.io/docs-cxx/legacy-v1/working-with-bson/&#34;&gt;Working with BSON&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Other helpers are listed in &lt;a href=&#34;https://mongodb.github.io/docs-cxx/legacy-v1/working-with-bson/&#34;&gt;Working with BSON&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&#34;inserting&#34;&gt;Inserting&lt;/h3&gt;
 
@@ -1573,16 +1573,16 @@ are many more capabilities. For further exploration:&lt;/p&gt;
     
     <item>
       <title>MongoDB C&#43;&#43; Driver Manual</title>
-      <link>http://mongodb.github.io/docs-cxx/</link>
+      <link>https://mongodb.github.io/docs-cxx/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/docs-cxx/</guid>
+      <guid>https://mongodb.github.io/docs-cxx/</guid>
       <description>
 
 &lt;h1 id=&#34;mongodb-c-driver&#34;&gt;MongoDB C++ Driver&lt;/h1&gt;
 
 &lt;p&gt;Welcome to the MongoDB C++ driver.  On this site, you&amp;rsquo;ll find guides to
-&lt;a href=&#34;http://mongodb.github.io/docs-cxx/mongocxx-v3/installing/&#34;&gt;installing&lt;/a&gt; and &lt;a href=&#34;http://mongodb.github.io/docs-cxx/mongocxx-v3/tutorial/&#34;&gt;getting
+&lt;a href=&#34;https://mongodb.github.io/docs-cxx/mongocxx-v3/installing/&#34;&gt;installing&lt;/a&gt; and &lt;a href=&#34;https://mongodb.github.io/docs-cxx/mongocxx-v3/tutorial/&#34;&gt;getting
 started&lt;/a&gt; with the C++ driver for MongoDB, plus
 other documentation to help you get the most from MongoDB and C++.&lt;/p&gt;
 
@@ -1692,10 +1692,10 @@ is recommended for all new development.&lt;/p&gt;
     
     <item>
       <title>Overview</title>
-      <link>http://mongodb.github.io/docs-cxx/legacy-v1/</link>
+      <link>https://mongodb.github.io/docs-cxx/legacy-v1/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/docs-cxx/legacy-v1/</guid>
+      <guid>https://mongodb.github.io/docs-cxx/legacy-v1/</guid>
       <description>&lt;p&gt;The legacy C++ driver builds on x86 and x86-64 architectures for Linux, Mac
 OS X, Windows, FreeBSD and Solaris.&lt;/p&gt;
 
@@ -1713,10 +1713,10 @@ deprecated C++ driver branch.)&lt;/p&gt;
     
     <item>
       <title>Overview</title>
-      <link>http://mongodb.github.io/docs-cxx/mongocxx-v3/</link>
+      <link>https://mongodb.github.io/docs-cxx/mongocxx-v3/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/docs-cxx/mongocxx-v3/</guid>
+      <guid>https://mongodb.github.io/docs-cxx/mongocxx-v3/</guid>
       <description>&lt;p&gt;The mongocxx is a ground-up rewrite of a C++ driver for MongoDB based on
 &lt;a href=&#34;http://mongoc.org/&#34;&gt;libmongoc&lt;/a&gt;.  It requires a C++11 compiler.  It it
 known to build on x86 and x86-64 architectures for Linux, Mac OS X,
@@ -1736,10 +1736,10 @@ deprecated legacy-0.0-26compat-2.x.y drivers.)&lt;/p&gt;
     
     <item>
       <title>Releasing the legacy driver</title>
-      <link>http://mongodb.github.io/docs-cxx/contributing/legacy-release-guide/</link>
+      <link>https://mongodb.github.io/docs-cxx/contributing/legacy-release-guide/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/docs-cxx/contributing/legacy-release-guide/</guid>
+      <guid>https://mongodb.github.io/docs-cxx/contributing/legacy-release-guide/</guid>
       <description>
 
 &lt;p&gt;If you&amp;rsquo;re reading this, chances are you&amp;rsquo;re about to issue a release for a
@@ -1945,10 +1945,10 @@ git push origin legacy
     
     <item>
       <title>Releasing the mongocxx driver</title>
-      <link>http://mongodb.github.io/docs-cxx/contributing/mongocxx-release-guide/</link>
+      <link>https://mongodb.github.io/docs-cxx/contributing/mongocxx-release-guide/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/docs-cxx/contributing/mongocxx-release-guide/</guid>
+      <guid>https://mongodb.github.io/docs-cxx/contributing/mongocxx-release-guide/</guid>
       <description>
 
 &lt;h2 id=&#34;releasing-the-mongocxx-driver&#34;&gt;Releasing the mongocxx driver&lt;/h2&gt;
@@ -2086,10 +2086,10 @@ The MongoDB C++ Driver Team&lt;/p&gt;
     
     <item>
       <title>Reporting Bugs</title>
-      <link>http://mongodb.github.io/docs-cxx/reporting-bugs/</link>
+      <link>https://mongodb.github.io/docs-cxx/reporting-bugs/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/docs-cxx/reporting-bugs/</guid>
+      <guid>https://mongodb.github.io/docs-cxx/reporting-bugs/</guid>
       <description>
 
 &lt;h2 id=&#34;reporting-bugs&#34;&gt;Reporting Bugs&lt;/h2&gt;
@@ -2116,10 +2116,10 @@ MongoDB project, please report it according to the instructions found in
     
     <item>
       <title>Testing the legacy driver</title>
-      <link>http://mongodb.github.io/docs-cxx/contributing/testing-legacy/</link>
+      <link>https://mongodb.github.io/docs-cxx/contributing/testing-legacy/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/docs-cxx/contributing/testing-legacy/</guid>
+      <guid>https://mongodb.github.io/docs-cxx/contributing/testing-legacy/</guid>
       <description>
 
 &lt;h2 id=&#34;testing-the-legacy-c-driver&#34;&gt;Testing the Legacy C++ Driver&lt;/h2&gt;
@@ -2242,10 +2242,10 @@ examples expect a mongod to be running locally on port 27999.&lt;/p&gt;
     
     <item>
       <title>Testing the mongocxx driver</title>
-      <link>http://mongodb.github.io/docs-cxx/contributing/testing-mongocxx/</link>
+      <link>https://mongodb.github.io/docs-cxx/contributing/testing-mongocxx/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/docs-cxx/contributing/testing-mongocxx/</guid>
+      <guid>https://mongodb.github.io/docs-cxx/contributing/testing-mongocxx/</guid>
       <description>
 
 &lt;h2 id=&#34;testing-the-mongocxx-driver&#34;&gt;Testing the mongocxx driver&lt;/h2&gt;

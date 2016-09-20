@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mongocxx-v3s on MongoDB C&#43;&#43; Driver Manual</title>
-    <link>http://mongodb.github.io/docs-cxx/mongocxx-v3/</link>
+    <link>https://mongodb.github.io/docs-cxx/mongocxx-v3/</link>
     <description>Recent content in Mongocxx-v3s on MongoDB C&#43;&#43; Driver Manual</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Aug 2016 16:11:58 +0530</lastBuildDate>
-    <atom:link href="http://mongodb.github.io/docs-cxx/mongocxx-v3/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mongodb.github.io/docs-cxx/mongocxx-v3/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>API and ABI versioning</title>
-      <link>http://mongodb.github.io/docs-cxx/mongocxx-v3/api-abi-versioning/</link>
+      <link>https://mongodb.github.io/docs-cxx/mongocxx-v3/api-abi-versioning/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/docs-cxx/mongocxx-v3/api-abi-versioning/</guid>
+      <guid>https://mongodb.github.io/docs-cxx/mongocxx-v3/api-abi-versioning/</guid>
       <description>
 
 &lt;h2 id=&#34;api-versioning&#34;&gt;API Versioning&lt;/h2&gt;
@@ -74,10 +74,10 @@ version of the library installed.&lt;/p&gt;
     
     <item>
       <title>Installing the mongocxx driver</title>
-      <link>http://mongodb.github.io/docs-cxx/mongocxx-v3/installation/</link>
+      <link>https://mongodb.github.io/docs-cxx/mongocxx-v3/installation/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/docs-cxx/mongocxx-v3/installation/</guid>
+      <guid>https://mongodb.github.io/docs-cxx/mongocxx-v3/installation/</guid>
       <description>
 
 &lt;h2 id=&#34;installing-the-mongocxx-driver&#34;&gt;Installing the mongocxx driver&lt;/h2&gt;
@@ -198,10 +198,10 @@ int main(int, char**) {
     
     <item>
       <title>Overview</title>
-      <link>http://mongodb.github.io/docs-cxx/mongocxx-v3/</link>
+      <link>https://mongodb.github.io/docs-cxx/mongocxx-v3/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/docs-cxx/mongocxx-v3/</guid>
+      <guid>https://mongodb.github.io/docs-cxx/mongocxx-v3/</guid>
       <description>&lt;p&gt;The mongocxx is a ground-up rewrite of a C++ driver for MongoDB based on
 &lt;a href=&#34;http://mongoc.org/&#34;&gt;libmongoc&lt;/a&gt;.  It requires a C++11 compiler.  It it
 known to build on x86 and x86-64 architectures for Linux, Mac OS X,
@@ -221,10 +221,10 @@ deprecated legacy-0.0-26compat-2.x.y drivers.)&lt;/p&gt;
     
     <item>
       <title>Thread safety</title>
-      <link>http://mongodb.github.io/docs-cxx/mongocxx-v3/thread-safety/</link>
+      <link>https://mongodb.github.io/docs-cxx/mongocxx-v3/thread-safety/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/docs-cxx/mongocxx-v3/thread-safety/</guid>
+      <guid>https://mongodb.github.io/docs-cxx/mongocxx-v3/thread-safety/</guid>
       <description>
 
 &lt;p&gt;TLDR: &lt;strong&gt;Always give each thread its own &lt;code&gt;mongocxx::client&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
@@ -310,10 +310,10 @@ with each client - but in a real program this is the best solution.&lt;/p&gt;
     
     <item>
       <title>Tutorial for mongocxx</title>
-      <link>http://mongodb.github.io/docs-cxx/mongocxx-v3/tutorial/</link>
+      <link>https://mongodb.github.io/docs-cxx/mongocxx-v3/tutorial/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/docs-cxx/mongocxx-v3/tutorial/</guid>
+      <guid>https://mongodb.github.io/docs-cxx/mongocxx-v3/tutorial/</guid>
       <description>
 
 &lt;h2 id=&#34;quick-start&#34;&gt;Quick Start&lt;/h2&gt;
@@ -324,7 +324,7 @@ with each client - but in a real program this is the best solution.&lt;/p&gt;
 &lt;li&gt;&lt;p&gt;A &lt;a href=&#34;https://docs.mongodb.com/manual/reference/program/mongod/&#34;&gt;mongod&lt;/a&gt;
 instance running on localhost on port 27017.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;The mongocxx Driver. See &lt;a href=&#34;http://mongodb.github.io/docs-cxx/mongocxx-v3/installation/&#34;&gt;Installation for mongocxx&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The mongocxx Driver. See &lt;a href=&#34;https://mongodb.github.io/docs-cxx/mongocxx-v3/installation/&#34;&gt;Installation for mongocxx&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;The following statements at the top of your source file:&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -359,12 +359,12 @@ with &lt;a href=&#34;https://www.freedesktop.org/wiki/Software/pkg-config/&#34;&
 &lt;h3 id=&#34;make-a-connection&#34;&gt;Make a Connection&lt;/h3&gt;
 
 &lt;p&gt;To connect to a running MongoDB instance, use the
-&lt;a href=&#34;http://mongodb.github.io/docs-cxx/api/mongocxx-v3/classmongocxx_1_1client.html
+&lt;a href=&#34;https://mongodb.github.io/docs-cxx/api/mongocxx-v3/classmongocxx_1_1client.html
 &#34;&gt;&lt;code&gt;mongocxx::client&lt;/code&gt;&lt;/a&gt;
 class.&lt;/p&gt;
 
 &lt;p&gt;You must specify the host to connect to using a
-&lt;a href=&#34;http://mongodb.github.io/docs-cxx/api/mongocxx-v3/classmongocxx_1_1uri.html
+&lt;a href=&#34;https://mongodb.github.io/docs-cxx/api/mongocxx-v3/classmongocxx_1_1uri.html
 &#34;&gt;&lt;code&gt;mongocxx::uri&lt;/code&gt;&lt;/a&gt; instance containing a
 &lt;a href=&#34;https://docs.mongodb.com/manual/reference/connection-string/&#34;&gt;MongoDB URI&lt;/a&gt;,
 and pass that into the &lt;code&gt;mongocxx::client&lt;/code&gt; constructor.&lt;/p&gt;
@@ -385,11 +385,11 @@ mongocxx::client client(uri);
 
 &lt;h4 id=&#34;access-a-database&#34;&gt;Access a Database&lt;/h4&gt;
 
-&lt;p&gt;Once you have a &lt;a href=&#34;http://mongodb.github.io/docs-cxx/api/mongocxx-v3/classmongocxx_1_1client.html
+&lt;p&gt;Once you have a &lt;a href=&#34;https://mongodb.github.io/docs-cxx/api/mongocxx-v3/classmongocxx_1_1client.html
 &#34;&gt;&lt;code&gt;mongocxx::client&lt;/code&gt;&lt;/a&gt;
 instance connected to a MongoDB deployment, use either the
 &lt;code&gt;database()&lt;/code&gt; method or &lt;code&gt;operator[]&lt;/code&gt; to obtain a
-&lt;a href=&#34;http://mongodb.github.io/docs-cxx/api/mongocxx-v3/classmongocxx_1_1database.html
+&lt;a href=&#34;https://mongodb.github.io/docs-cxx/api/mongocxx-v3/classmongocxx_1_1database.html
 &#34;&gt;&lt;code&gt;mongocxx::database&lt;/code&gt;&lt;/a&gt;
 instance.&lt;/p&gt;
 
@@ -404,10 +404,10 @@ first store data.&lt;/p&gt;
 &lt;h4 id=&#34;access-a-collection&#34;&gt;Access a Collection&lt;/h4&gt;
 
 &lt;p&gt;Once you have a
-&lt;a href=&#34;http://mongodb.github.io/docs-cxx/api/mongocxx-v3/classmongocxx_1_1database.html
+&lt;a href=&#34;https://mongodb.github.io/docs-cxx/api/mongocxx-v3/classmongocxx_1_1database.html
 &#34;&gt;&lt;code&gt;mongocxx::database&lt;/code&gt;&lt;/a&gt;
 instance, use either the &lt;code&gt;collection()&lt;/code&gt; method or &lt;code&gt;operator[]&lt;/code&gt; to obtain a
-&lt;a href=&#34;http://mongodb.github.io/docs-cxx/api/mongocxx-v3/classmongocxx_1_1collection.html
+&lt;a href=&#34;https://mongodb.github.io/docs-cxx/api/mongocxx-v3/classmongocxx_1_1collection.html
 &#34;&gt;&lt;code&gt;mongocxx::collection&lt;/code&gt;&lt;/a&gt;
 instance.&lt;/p&gt;
 
@@ -469,13 +469,13 @@ bsoncxx::document::value doc_value = builder
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Use &lt;code&gt;bsoncxx::builder::stream::finalize&lt;/code&gt; to obtain a
-&lt;a href=&#34;http://mongodb.github.io/docs-cxx/api/mongocxx-v3/classbsoncxx_1_1document_1_1value.html
+&lt;a href=&#34;https://mongodb.github.io/docs-cxx/api/mongocxx-v3/classbsoncxx_1_1document_1_1value.html
 &#34;&gt;&lt;code&gt;bsoncxx::document::value&lt;/code&gt;&lt;/a&gt;
 instance.&lt;/p&gt;
 
 &lt;p&gt;This &lt;code&gt;bsoncxx::document::value&lt;/code&gt; type is a read-only object owning
 its own memory. To use it, you must obtain a
-&lt;a href=&#34;http://mongodb.github.io/docs-cxx/api/mongocxx-v3/classbsoncxx_1_1document_1_1view.html
+&lt;a href=&#34;https://mongodb.github.io/docs-cxx/api/mongocxx-v3/classbsoncxx_1_1document_1_1view.html
 &#34;&gt;&lt;code&gt;bsoncxx::document::view&lt;/code&gt;&lt;/a&gt; using
 the &lt;code&gt;view()&lt;/code&gt; method:&lt;/p&gt;
 
@@ -484,7 +484,7 @@ the &lt;code&gt;view()&lt;/code&gt; method:&lt;/p&gt;
 
 &lt;p&gt;You can access fields within this document view using &lt;code&gt;operator[]&lt;/code&gt;,
 which will return a
-&lt;a href=&#34;http://mongodb.github.io/docs-cxx/api/mongocxx-v3/classbsoncxx_1_1document_1_1element.html
+&lt;a href=&#34;https://mongodb.github.io/docs-cxx/api/mongocxx-v3/classbsoncxx_1_1document_1_1element.html
 &#34;&gt;&lt;code&gt;bsoncxx::document::element&lt;/code&gt;&lt;/a&gt;
 instance. For example, the following will extract the &lt;code&gt;name&lt;/code&gt; field whose
 value is a string:&lt;/p&gt;
@@ -499,7 +499,7 @@ std::string name = element.get_utf8().value.to_string();
 &lt;p&gt;If the value in the &lt;code&gt;name&lt;/code&gt; field is not a string and you do not
 include a type guard as seen in the preceding example, this code will
 throw an instance of
-&lt;a href=&#34;http://mongodb.github.io/docs-cxx/api/mongocxx-v3/classbsoncxx_1_1exception.html
+&lt;a href=&#34;https://mongodb.github.io/docs-cxx/api/mongocxx-v3/classbsoncxx_1_1exception.html
 &#34;&gt;&lt;code&gt;bsoncxx::exception&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&#34;insert-documents&#34;&gt;Insert Documents&lt;/h3&gt;
@@ -507,7 +507,7 @@ throw an instance of
 &lt;h4 id=&#34;insert-one-document&#34;&gt;Insert One Document&lt;/h4&gt;
 
 &lt;p&gt;To insert a single document into the collection, use a
-&lt;a href=&#34;http://mongodb.github.io/docs-cxx/api/mongocxx-v3/classmongocxx_1_1collection.html
+&lt;a href=&#34;https://mongodb.github.io/docs-cxx/api/mongocxx-v3/classmongocxx_1_1collection.html
 &#34;&gt;&lt;code&gt;mongocxx::collection&lt;/code&gt;&lt;/a&gt;
 instance&amp;rsquo;s &lt;code&gt;insert_one()&lt;/code&gt; method:&lt;/p&gt;
 
@@ -519,14 +519,14 @@ MongoDB automatically adds an &lt;code&gt;_id&lt;/code&gt; field to the inserted
 
 &lt;p&gt;You can obtain this value using the &lt;code&gt;inserted_id()&lt;/code&gt; method of the
 returned
-&lt;a href=&#34;http://mongodb.github.io/docs-cxx/api/mongocxx-v3/classmongocxx_1_1result_1_1insert__one.html
+&lt;a href=&#34;https://mongodb.github.io/docs-cxx/api/mongocxx-v3/classmongocxx_1_1result_1_1insert__one.html
 &#34;&gt;&lt;code&gt;mongocxx::result::insert_one&lt;/code&gt;&lt;/a&gt;
 instance.&lt;/p&gt;
 
 &lt;h4 id=&#34;insert-multiple-documents&#34;&gt;Insert Multiple Documents&lt;/h4&gt;
 
 &lt;p&gt;To insert multiple documents to the collection, use a
-&lt;a href=&#34;http://mongodb.github.io/docs-cxx/api/mongocxx-v3/classmongocxx_1_1collection.html
+&lt;a href=&#34;https://mongodb.github.io/docs-cxx/api/mongocxx-v3/classmongocxx_1_1collection.html
 &#34;&gt;&lt;code&gt;mongocxx::collection&lt;/code&gt;&lt;/a&gt; instance&amp;rsquo;s
 &lt;code&gt;insert_many()&lt;/code&gt; method, which takes a list of documents to insert.&lt;/p&gt;
 
@@ -555,7 +555,7 @@ MongoDB automatically adds a &lt;code&gt;_id&lt;/code&gt; field to the inserted 
 
 &lt;p&gt;You can obtain this value using the &lt;code&gt;inserted_ids()&lt;/code&gt; method of the
 returned
-&lt;a href=&#34;http://mongodb.github.io/docs-cxx/api/mongocxx-v3/classmongocxx_1_1result_1_1insert__many.html
+&lt;a href=&#34;https://mongodb.github.io/docs-cxx/api/mongocxx-v3/classmongocxx_1_1result_1_1insert__many.html
 &#34;&gt;&lt;code&gt;mongocxx::result::insert_many&lt;/code&gt;&lt;/a&gt;
 instance.&lt;/p&gt;
 
@@ -565,10 +565,10 @@ instance.&lt;/p&gt;
 &lt;code&gt;find_one&lt;/code&gt; methods.&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;find()&lt;/code&gt; will return an instance of
-&lt;a href=&#34;http://mongodb.github.io/docs-cxx/api/mongocxx-v3/classmongocxx_1_1cursor.html
+&lt;a href=&#34;https://mongodb.github.io/docs-cxx/api/mongocxx-v3/classmongocxx_1_1cursor.html
 &#34;&gt;&lt;code&gt;mongocxx::cursor&lt;/code&gt;&lt;/a&gt;,
 while &lt;code&gt;find_one()&lt;/code&gt; will return an instance of
-&lt;code&gt;std::optional&amp;lt;&lt;/code&gt;&lt;a href=&#34;http://mongodb.github.io/docs-cxx/api/mongocxx-v3/classbsoncxx_1_1document_1_1value.html
+&lt;code&gt;std::optional&amp;lt;&lt;/code&gt;&lt;a href=&#34;https://mongodb.github.io/docs-cxx/api/mongocxx-v3/classbsoncxx_1_1document_1_1value.html
 &#34;&gt;&lt;code&gt;bsoncxx::document::value&lt;/code&gt;&lt;/a&gt;&lt;code&gt;&amp;gt;&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;You can call either method without any arguments to query all documents
@@ -640,7 +640,7 @@ for(auto doc : cursor) {
 &lt;code&gt;update_one()&lt;/code&gt; and &lt;code&gt;update_many()&lt;/code&gt; methods.&lt;/p&gt;
 
 &lt;p&gt;The update methods return an instance of
-&lt;code&gt;std::optional&amp;lt;&lt;/code&gt;&lt;a href=&#34;http://mongodb.github.io/docs-cxx/api/mongocxx-v3/classmongocxx_1_1result_1_1update.html
+&lt;code&gt;std::optional&amp;lt;&lt;/code&gt;&lt;a href=&#34;https://mongodb.github.io/docs-cxx/api/mongocxx-v3/classmongocxx_1_1result_1_1update.html
 &#34;&gt;&lt;code&gt;mongocxx::result::update&lt;/code&gt;&lt;/a&gt;&lt;code&gt;&amp;gt;&lt;/code&gt;,
 which provides information about the operation including the number of
 documents modified by the update.&lt;/p&gt;
@@ -683,7 +683,7 @@ if(result) {
 &lt;code&gt;delete_one()&lt;/code&gt; and &lt;code&gt;delete_many()&lt;/code&gt; methods.&lt;/p&gt;
 
 &lt;p&gt;The delete methods return an instance of
-&lt;code&gt;std::optional&amp;lt;&lt;/code&gt;&lt;a href=&#34;http://mongodb.github.io/docs-cxx/api/mongocxx-v3/classmongocxx_1_1result_1_1delete__result.html
+&lt;code&gt;std::optional&amp;lt;&lt;/code&gt;&lt;a href=&#34;https://mongodb.github.io/docs-cxx/api/mongocxx-v3/classmongocxx_1_1result_1_1delete__result.html
 &#34;&gt;&lt;code&gt;mongocxx::result::delete&lt;/code&gt;&lt;/a&gt;&lt;code&gt;&amp;gt;&lt;/code&gt;,
 which contains the number of documents deleted.&lt;/p&gt;
 
@@ -721,7 +721,7 @@ if(result) {
 &lt;p&gt;To create an &lt;a href=&#34;https://docs.mongodb.com/manual/indexes/&#34;&gt;index&lt;/a&gt; on a
 field or set of fields, pass an index specification document to the
 &lt;code&gt;create_index()&lt;/code&gt; method of a
-&lt;a href=&#34;http://mongodb.github.io/docs-cxx/api/mongocxx-v3/classmongocxx_1_1collection.html
+&lt;a href=&#34;https://mongodb.github.io/docs-cxx/api/mongocxx-v3/classmongocxx_1_1collection.html
 &#34;&gt;&lt;code&gt;mongocxx::collection&lt;/code&gt;&lt;/a&gt; instance. An
 index key specification document contains the fields to index and the
 index type for each field:&lt;/p&gt;
@@ -744,10 +744,10 @@ collection.create_index(std::move(index_specification));
     
     <item>
       <title>Working with BSON</title>
-      <link>http://mongodb.github.io/docs-cxx/mongocxx-v3/working-with-bson/</link>
+      <link>https://mongodb.github.io/docs-cxx/mongocxx-v3/working-with-bson/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/docs-cxx/mongocxx-v3/working-with-bson/</guid>
+      <guid>https://mongodb.github.io/docs-cxx/mongocxx-v3/working-with-bson/</guid>
       <description>
 
 &lt;p&gt;The mongocxx driver ships with a new library, bsoncxx.  This article will
