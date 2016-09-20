@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Contributings on MongoDB C&#43;&#43; Driver Manual</title>
-    <link>http://mongodb.github.io/mongo-cxx-driver/contributing/</link>
+    <link>http://mongodb.github.io/docs-cxx/contributing/</link>
     <description>Recent content in Contributings on MongoDB C&#43;&#43; Driver Manual</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Aug 2016 16:11:58 +0530</lastBuildDate>
-    <atom:link href="http://mongodb.github.io/mongo-cxx-driver/contributing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://mongodb.github.io/docs-cxx/contributing/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Contribution Guidelines</title>
-      <link>http://mongodb.github.io/mongo-cxx-driver/contributing/</link>
+      <link>http://mongodb.github.io/docs-cxx/contributing/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/mongo-cxx-driver/contributing/</guid>
+      <guid>http://mongodb.github.io/docs-cxx/contributing/</guid>
       <description>
 
 &lt;h2 id=&#34;contribution-guidelines&#34;&gt;Contribution Guidelines&lt;/h2&gt;
@@ -166,10 +166,10 @@ MONGOCXX_INLINE_NAMESPACE_END
     
     <item>
       <title>Releasing the legacy driver</title>
-      <link>http://mongodb.github.io/mongo-cxx-driver/contributing/legacy-release-guide/</link>
+      <link>http://mongodb.github.io/docs-cxx/contributing/legacy-release-guide/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/mongo-cxx-driver/contributing/legacy-release-guide/</guid>
+      <guid>http://mongodb.github.io/docs-cxx/contributing/legacy-release-guide/</guid>
       <description>
 
 &lt;p&gt;If you&amp;rsquo;re reading this, chances are you&amp;rsquo;re about to issue a release for a
@@ -375,10 +375,10 @@ git push origin legacy
     
     <item>
       <title>Releasing the mongocxx driver</title>
-      <link>http://mongodb.github.io/mongo-cxx-driver/contributing/mongocxx-release-guide/</link>
+      <link>http://mongodb.github.io/docs-cxx/contributing/mongocxx-release-guide/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/mongo-cxx-driver/contributing/mongocxx-release-guide/</guid>
+      <guid>http://mongodb.github.io/docs-cxx/contributing/mongocxx-release-guide/</guid>
       <description>
 
 &lt;h2 id=&#34;releasing-the-mongocxx-driver&#34;&gt;Releasing the mongocxx driver&lt;/h2&gt;
@@ -516,10 +516,10 @@ The MongoDB C++ Driver Team&lt;/p&gt;
     
     <item>
       <title>Testing the legacy driver</title>
-      <link>http://mongodb.github.io/mongo-cxx-driver/contributing/testing-legacy/</link>
+      <link>http://mongodb.github.io/docs-cxx/contributing/testing-legacy/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/mongo-cxx-driver/contributing/testing-legacy/</guid>
+      <guid>http://mongodb.github.io/docs-cxx/contributing/testing-legacy/</guid>
       <description>
 
 &lt;h2 id=&#34;testing-the-legacy-c-driver&#34;&gt;Testing the Legacy C++ Driver&lt;/h2&gt;
@@ -642,10 +642,10 @@ examples expect a mongod to be running locally on port 27999.&lt;/p&gt;
     
     <item>
       <title>Testing the mongocxx driver</title>
-      <link>http://mongodb.github.io/mongo-cxx-driver/contributing/testing-mongocxx/</link>
+      <link>http://mongodb.github.io/docs-cxx/contributing/testing-mongocxx/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/mongo-cxx-driver/contributing/testing-mongocxx/</guid>
+      <guid>http://mongodb.github.io/docs-cxx/contributing/testing-mongocxx/</guid>
       <description>
 
 &lt;h2 id=&#34;testing-the-mongocxx-driver&#34;&gt;Testing the mongocxx driver&lt;/h2&gt;

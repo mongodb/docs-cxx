@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mongocxx-v3s on MongoDB C&#43;&#43; Driver Manual</title>
-    <link>http://mongodb.github.io/mongo-cxx-driver/mongocxx-v3/</link>
+    <link>http://mongodb.github.io/docs-cxx/mongocxx-v3/</link>
     <description>Recent content in Mongocxx-v3s on MongoDB C&#43;&#43; Driver Manual</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Aug 2016 16:11:58 +0530</lastBuildDate>
-    <atom:link href="http://mongodb.github.io/mongo-cxx-driver/mongocxx-v3/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://mongodb.github.io/docs-cxx/mongocxx-v3/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>API and ABI versioning</title>
-      <link>http://mongodb.github.io/mongo-cxx-driver/mongocxx-v3/api-abi-versioning/</link>
+      <link>http://mongodb.github.io/docs-cxx/mongocxx-v3/api-abi-versioning/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/mongo-cxx-driver/mongocxx-v3/api-abi-versioning/</guid>
+      <guid>http://mongodb.github.io/docs-cxx/mongocxx-v3/api-abi-versioning/</guid>
       <description>
 
 &lt;h2 id=&#34;api-versioning&#34;&gt;API Versioning&lt;/h2&gt;
@@ -74,10 +74,10 @@ version of the library installed.&lt;/p&gt;
     
     <item>
       <title>Installing the mongocxx driver</title>
-      <link>http://mongodb.github.io/mongo-cxx-driver/mongocxx-v3/installation/</link>
+      <link>http://mongodb.github.io/docs-cxx/mongocxx-v3/installation/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/mongo-cxx-driver/mongocxx-v3/installation/</guid>
+      <guid>http://mongodb.github.io/docs-cxx/mongocxx-v3/installation/</guid>
       <description>
 
 &lt;h2 id=&#34;installing-the-mongocxx-driver&#34;&gt;Installing the mongocxx driver&lt;/h2&gt;
@@ -198,10 +198,10 @@ int main(int, char**) {
     
     <item>
       <title>Overview</title>
-      <link>http://mongodb.github.io/mongo-cxx-driver/mongocxx-v3/</link>
+      <link>http://mongodb.github.io/docs-cxx/mongocxx-v3/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/mongo-cxx-driver/mongocxx-v3/</guid>
+      <guid>http://mongodb.github.io/docs-cxx/mongocxx-v3/</guid>
       <description>&lt;p&gt;The mongocxx is a ground-up rewrite of a C++ driver for MongoDB based on
 &lt;a href=&#34;http://mongoc.org/&#34;&gt;libmongoc&lt;/a&gt;.  It requires a C++11 compiler.  It it
 known to build on x86 and x86-64 architectures for Linux, Mac OS X,
@@ -221,10 +221,10 @@ deprecated legacy-0.0-26compat-2.x.y drivers.)&lt;/p&gt;
     
     <item>
       <title>Thread safety</title>
-      <link>http://mongodb.github.io/mongo-cxx-driver/mongocxx-v3/thread-safety/</link>
+      <link>http://mongodb.github.io/docs-cxx/mongocxx-v3/thread-safety/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/mongo-cxx-driver/mongocxx-v3/thread-safety/</guid>
+      <guid>http://mongodb.github.io/docs-cxx/mongocxx-v3/thread-safety/</guid>
       <description>
 
 &lt;p&gt;TLDR: &lt;strong&gt;Always give each thread its own &lt;code&gt;mongocxx::client&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
@@ -310,10 +310,10 @@ with each client - but in a real program this is the best solution.&lt;/p&gt;
     
     <item>
       <title>Tutorial for mongocxx</title>
-      <link>http://mongodb.github.io/mongo-cxx-driver/mongocxx-v3/tutorial/</link>
+      <link>http://mongodb.github.io/docs-cxx/mongocxx-v3/tutorial/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/mongo-cxx-driver/mongocxx-v3/tutorial/</guid>
+      <guid>http://mongodb.github.io/docs-cxx/mongocxx-v3/tutorial/</guid>
       <description>
 
 &lt;h2 id=&#34;quick-start&#34;&gt;Quick Start&lt;/h2&gt;
@@ -324,7 +324,7 @@ with each client - but in a real program this is the best solution.&lt;/p&gt;
 &lt;li&gt;&lt;p&gt;A &lt;a href=&#34;https://docs.mongodb.com/manual/reference/program/mongod/&#34;&gt;mongod&lt;/a&gt;
 instance running on localhost on port 27017.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;The mongocxx Driver. See &lt;a href=&#34;http://mongodb.github.io/mongo-cxx-driver/mongocxx-v3/installation/&#34;&gt;Installation for mongocxx&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The mongocxx Driver. See &lt;a href=&#34;http://mongodb.github.io/docs-cxx/mongocxx-v3/installation/&#34;&gt;Installation for mongocxx&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;The following statements at the top of your source file:&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -744,10 +744,10 @@ collection.create_index(std::move(index_specification));
     
     <item>
       <title>Working with BSON</title>
-      <link>http://mongodb.github.io/mongo-cxx-driver/mongocxx-v3/working-with-bson/</link>
+      <link>http://mongodb.github.io/docs-cxx/mongocxx-v3/working-with-bson/</link>
       <pubDate>Mon, 15 Aug 2016 16:11:58 +0530</pubDate>
       
-      <guid>http://mongodb.github.io/mongo-cxx-driver/mongocxx-v3/working-with-bson/</guid>
+      <guid>http://mongodb.github.io/docs-cxx/mongocxx-v3/working-with-bson/</guid>
       <description>
 
 &lt;p&gt;The mongocxx driver ships with a new library, bsoncxx.  This article will
