@@ -1,5 +1,0 @@
-==============================
-Projections, Sorts, and Limits
-==============================
-
-.. default-domain:: mongodb

@@ -1,5 +1,0 @@
-=================
-Geospatial Search
-=================
-
-.. default-domain:: mongodb
