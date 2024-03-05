@@ -1,5 +1,0 @@
-=======
-Indexes
-=======
-
-.. default-domain:: mongodb

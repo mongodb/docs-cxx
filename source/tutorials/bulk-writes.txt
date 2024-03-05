@@ -1,5 +1,0 @@
-===========
-Bulk Writes
-===========
-
-.. default-domain:: mongodb

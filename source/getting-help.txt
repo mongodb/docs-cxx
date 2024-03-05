@@ -1,0 +1,26 @@
+.. _cpp-getting-help:
+
+============
+Getting Help
+============
+
+.. facet::
+   :name: programming_language
+   :values: cpp
+
+.. facet::
+   :name: genre
+   :values: reference
+
+.. meta::
+   :keywords: community, forum, support
+
+Often, the quickest way to get support for general questions is through
+the
+`MongoDB Community Forums <https://www.mongodb.com/community/forums/tag/cxx>`__
+or through
+`Stack Overflow <https://stackoverflow.com/questions/tagged/mongodb%20c%2b%2b>`__.
+
+Please also refer to MongoDB's
+`support channels <https://www.mongodb.com/docs/manual/support>`__ documentation.
+

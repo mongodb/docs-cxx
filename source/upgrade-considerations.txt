@@ -1,5 +1,0 @@
-======================
-Upgrade Considerations
-======================
-
-.. default-domain:: mongodb

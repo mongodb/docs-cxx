@@ -1,0 +1,6 @@
+define: prefix docs/drivers/cpp
+define: base https://www.mongodb.com/${prefix}
+define: versions master
+
+raw: ${prefix}/ -> ${base}/current/
+raw: ${prefix}/master -> ${base}/upcoming/

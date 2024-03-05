@@ -1,5 +1,0 @@
-=======
-TLS/SSL
-=======
-
-.. default-domain:: mongodb
